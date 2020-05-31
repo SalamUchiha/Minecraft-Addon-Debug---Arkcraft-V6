@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "arkcraft:ice_powder2"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "arkcraft:cuerno_de_frozen_demon"
+      }
+    ],
+    "result": {
+      "item": "arkcraft:ice_powder",
+      "count": 9
+    }
+  }
+  
+}

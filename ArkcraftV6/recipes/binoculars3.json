@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:binoculars2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " Z ",
+      "ZXZ",
+      " Z "
+    ],
+    "key": {
+      "Z": {
+        "item": "arkcraft:binoculars2"
+      },
+      "X": {
+        "item": "arkcraft:nightvision_glass"
+      }
+    },
+    "result": {
+      "item": "arkcraft:binoculars3",
+      "count": 4
+    }
+  }
+}

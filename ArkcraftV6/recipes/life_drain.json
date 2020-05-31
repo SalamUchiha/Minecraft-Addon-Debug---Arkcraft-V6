@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:skull3"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      "XLX",
+      "XXX"
+    ],
+    "key": {
+      "L": {
+        "item": "arkcraft:yutyrannus_egg"
+      },
+      "X": {
+        "item": "arkcraft:rotten"
+      }
+    },
+    "result": {
+      "item": "arkcraft:life_drainer"
+    }
+  }
+}

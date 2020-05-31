@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:geltorch"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "0",
+      "c"
+    ],
+   "key": {
+      "c": {
+        "item": "minecraft:torch"
+      },
+      "0": {
+        "item": "arkcraft:gel"
+      }
+    },
+    "result": {
+      "item": "minecraft:torch",
+      "count": 5
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+   "description": "§3By Alex587 and CopperLord44",
+        "name": "§bArkcraft §6V§g6 §bBehavior",
+        "uuid": "3b2efde4-691a-4bd5-a78b-032b9219ab54",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+   "description": "§3By Alex587 and CopperLord44",
+            "type": "data",
+            "uuid": "732d9425-2edf-42e4-b37d-03cc7a8e79f8",
+            "version": [0, 0, 1]
+        }
+    ]
+}

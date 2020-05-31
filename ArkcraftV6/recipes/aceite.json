@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:aceite"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "W"
+    ],
+   "key": {
+      "W": {
+        "item": "arkcraft:hesperornis_egg"
+      }
+    },
+    "result": {
+      "item": "arkcraft:aceite",     "count": 30
+    }
+  }
+}

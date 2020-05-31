@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraniumayrmor"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ZWZ"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:shield"
+      },
+      "Z": {
+        "item": "arkcraft:titanium"
+      }
+    },
+    "result": {
+      "item": "arkcraft:titanium_shield",
+      "count": 5
+    }
+  }
+}

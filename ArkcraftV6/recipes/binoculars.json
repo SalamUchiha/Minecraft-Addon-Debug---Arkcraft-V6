@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:binoculars"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ZWZ"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:iron_ingot"
+      },
+      "Z": {
+        "item": "minecraft:glass_pane"
+      }
+    },
+    "result": {
+      "item": "arkcraft:binoculars",
+      "count": 10
+    }
+  }
+}

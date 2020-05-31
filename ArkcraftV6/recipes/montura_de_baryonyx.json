@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_baryonyx"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "331",
+      "442",
+      "222"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:saddle"
+      },
+      "2": {
+        "item": "minecraft:leather"
+      },
+      "3": {
+        "item": "minecraft:fence"
+      },
+      "4": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_de_baryonyx"
+    }
+  }
+}

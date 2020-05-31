@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraniumarmor"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ZZZ",
+      "ZWZ",
+      "ZZZ"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:obsidian"
+      },
+      "Z": {
+        "item": "arkcraft:titanium"
+      }
+    },
+    "result": {
+      "item": "arkcraft:titanium_armor"
+    }
+  }
+}

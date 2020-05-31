@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:spawn_egg:26"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      "XLX",
+      "XXX"
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:totem"
+      },
+      "X": {
+        "item": "minecraft:skull"
+      }
+    },
+    "result": {
+      "item": "minecraft:spawn_egg",
+      "data": 26
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:metal_frame"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "111",
+       "121",
+       "111"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:redstone_block"
+      },
+      "1": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:metal_frame"
+    }
+  }
+}
+
+

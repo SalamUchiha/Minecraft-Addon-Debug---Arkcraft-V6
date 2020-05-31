@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_daeodon_tek"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "1W1",
+      "ZZZ"
+    ],
+    "key": {
+      "W": {
+        "item": "arkcraft:montura_de_daeodon"
+      },
+     "Z": {
+        "item": "arkcraft:elemento" },
+      "1": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_de_daeodon_tek"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "arkcraft:piedra_mejorada",
+      "is_experimental": false,
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/piedra_mejorada.json"
+      },
+      "minecraft:destroy_time": {
+        "value":  60.0
+      },
+      "minecraft:map_color": {
+        "color": "#555555"
+      }
+    }
+  }
+}

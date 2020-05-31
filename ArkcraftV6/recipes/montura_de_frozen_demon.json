@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_frozen_demon"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "111",
+       "121",
+       "222"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:iron_block"
+      },
+      "1": {
+        "item": "minecraft:iron_bars"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_de_frozen_demon"
+    }
+  }
+}
+
+

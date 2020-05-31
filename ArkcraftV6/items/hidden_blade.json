@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:hidden_blade"
+    },
+
+    "components": {
+      "minecraft:stacked_by_data": true,
+      "minecraft:use_duration": 1,
+      "minecraft:foil": false,
+  
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "strength",
+            "chance": 1.0,
+            "duration": 500,
+            "amplifier": 1,
+  "visible": false,
+              "ambient": false
+          }
+        ]
+      }
+    }
+  }
+}

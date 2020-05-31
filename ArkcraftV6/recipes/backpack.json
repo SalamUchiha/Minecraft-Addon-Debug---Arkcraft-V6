@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:shulker_box2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "SSX",
+      "SWS",
+      "ZZX"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:barrel"
+      },
+      "S": {
+        "item": "minecraft:leather"
+      },
+      "X": {
+        "item": "minecraft:lead"
+      },
+      "Z": {
+        "item": "minecraft:web"
+      }
+    },
+    "result": {
+      "item": "minecraft:shulker_box"
+    }
+  }
+}

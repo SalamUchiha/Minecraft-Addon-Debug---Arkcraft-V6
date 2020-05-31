@@ -1,0 +1,52 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:fire_meat_cooked"
+    },
+    
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 30,
+      "minecraft:foil": false,
+  
+      
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "speed",
+            "chance": 1.0,
+            "duration": 15,
+            "visible":false,
+            "amplifier": 4
+            },
+          {
+            "name": "haste",
+            "chance": 1.0,
+            "duration": 15,
+            "visible":false,
+            "amplifier": 4
+            },
+          {
+            "name": "wither",
+            "chance": 1.0,
+            "duration": 3,
+            "visible":false,
+            "amplifier": 0
+            },
+          {
+            "name": "fire_resistance",
+            "chance": 1.0,
+            "duration": 5,
+            "visible":false,
+            "amplifier": 0
+            }
+        
+        ]
+      }
+    }
+  }
+}

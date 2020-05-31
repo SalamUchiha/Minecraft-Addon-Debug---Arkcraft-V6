@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:spawn_egg:85"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "WW"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:fireball"
+      }
+    },
+    "result": {
+      "item": "minecraft:spawn_egg",
+      "data": 85
+    }
+  }
+}

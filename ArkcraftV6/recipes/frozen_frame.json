@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:frozen_frame"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "111",
+       "121",
+       "111"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:blue_ice"
+      },
+      "1": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "arkcraft:frozen_frame"
+    }
+  }
+}
+
+
+

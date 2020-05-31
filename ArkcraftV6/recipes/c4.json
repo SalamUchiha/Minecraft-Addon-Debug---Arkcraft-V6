@@ -1,0 +1,39 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:xesperor"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ccc",
+      "XWX",
+      "ccc"
+    ],
+   "key": {
+      "W": {
+        "item": "arkcraft:detonador"
+      },
+      "c": {
+        "item": "minecraft:spawn_egg",
+      "data": 257
+      },
+      "X": {
+        "item": "arkcraft:c4_component"
+      }
+    },
+    "result": {
+      "item": "minecraft:spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_actor_id",
+                            "id": "ck:black_dragon_egg"
+                        }
+                    ],
+"count": 2
+
+    }
+  }
+}

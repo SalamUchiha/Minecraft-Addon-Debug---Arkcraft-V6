@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:compy"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XZ",
+      "XZX",
+      "WX "
+    ],
+   "key": {
+      "Z": {
+        "item": "minecraft:redstone_wire"
+      },
+      "W": {
+        "item": "minecraft:iron_block"
+      },
+      "X": {
+        "item": "minecraft:tnt"
+      }
+    },
+    "result": {
+      "item": "minecraft:spawn_egg",
+      "data": 287
+    }
+  }
+}

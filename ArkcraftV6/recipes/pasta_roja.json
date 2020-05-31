@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:pasta_roja"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X X",
+      " p ",
+      "X X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:fermented_spider_eye"
+      },
+      "p": {
+        "item": "arkcraft:pulmonoscorpius_egg"
+      }
+    },
+    "result": {
+      "item": "arkcraft:pasta_roja"
+    }
+  }
+}

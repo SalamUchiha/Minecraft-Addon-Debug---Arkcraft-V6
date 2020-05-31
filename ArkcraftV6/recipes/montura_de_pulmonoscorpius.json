@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_pulmonoscorpius"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "121",
+       "141",
+       "333"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:leather"
+      },
+      "2": {
+        "item": "minecraft:leather_chestplate"
+      },
+      "3": {
+        "item": "minecraft:iron_ingot"
+      },
+      "4": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_de_pulmonoscorpius"
+    }
+  }
+}
+
+

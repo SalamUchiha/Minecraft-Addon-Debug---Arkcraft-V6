@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:c4_component"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ccc",
+      "c0c",
+      "ccc"
+    ],
+   "key": {
+      "c": {
+        "item": "minecraft:redstone_wire"
+      },
+      "0": {
+        "item": "minecraft:slime"
+      }
+    },
+    "result": {
+      "item": "arkcraft:c4_component"
+    }
+  }
+}

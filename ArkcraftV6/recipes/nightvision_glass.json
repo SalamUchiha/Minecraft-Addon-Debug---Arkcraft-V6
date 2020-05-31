@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:nightvision_glass"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ccc",
+      "c0c",
+      "ccc"
+    ],
+   "key": {
+      "c": {
+        "item": "minecraft:stained_glass_pane"
+      },
+      "0": {
+        "item": "arkcraft:c4_component"
+      }
+    },
+    "result": {
+      "item": "arkcraft:nightvision_glass"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:hidden_blade"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "SSS",
+      "SWW",
+      "ZSZ"
+    ],
+    "key": {
+      "W": {
+        "item": "arkcraft:placa_de_metal"
+      },
+      "S": {
+        "item": "minecraft:lead"
+      },
+      "Z": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "result": {
+      "item": "arkcraft:hidden_blade"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:binoculars3"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ZZZ",
+      "ZZZ",
+      "ZZZ"
+    ],
+    "key": {
+      
+      "Z": {
+        "item": "arkcraft:binoculars"
+      }
+    },
+    "result": {
+      "item": "arkcraft:binoculars2",
+      "count": 9
+    }
+  }
+}

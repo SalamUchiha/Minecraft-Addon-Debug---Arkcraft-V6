@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:hesperornis"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XW"
+    ],
+   "key": {
+      "W": {
+        "item": "arkcraft:hesperornis_egg"
+      },
+      "X": {
+        "item": "minecraft:egg"
+      }
+    },
+    "result": {
+      "item": "minecraft:spawn_egg",
+      "data": 259
+    }
+  }
+}

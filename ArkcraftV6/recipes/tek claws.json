@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:tek_claws"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ZWZ"
+    ],
+    "key": {
+      "W": {
+        "item": "arkcraft:hidden_blade"
+      },
+      "Z": {
+        "item": "arkcraft:elemento"
+      }
+    },
+    "result": {
+      "item": "arkcraft:tek_claws",
+      "count": 2
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "arkcraft:medic_leach",
+       "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+
+        "minecraft:distance_filter": {
+          "min": 3,
+          "max": 50
+        },
+        "minecraft:weight": {
+          "default": 240
+        },
+        "minecraft:density_limit": {
+          "surface":3
+        },
+        "minecraft:herd": {
+          "min_size":1,
+          "max_size":3
+        },
+
+        "minecraft:biome_filter": [
+          {"test": "has_biome_tag", "operator":"==", "value": "swamp"}
+        ]
+      }
+    ]
+  }
+}

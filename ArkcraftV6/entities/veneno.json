@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:veneno",
+          "runtime_identifier":      "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.825,
+        "height": 0.825
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 2,
+            "should_bounce": false
+          },
+          "mob_effect": {
+            "effect": "slowness",
+            "durationeasy": 400,
+            "durationnormal": 400,
+            "durationhard": 400,
+            "amplifier": 255
+          },
+          "remove_on_hit": {
+          }
+        },
+        "destroyOnHurt": true,
+        "power": 1.6,
+        "gravity": 0.05,
+        "anchor": 1,
+        "offset": [ 0, -0.1, 0 ]
+      },
+      "minecraft:physics": {
+        "has_collision": false
+      }
+    }
+  }
+}

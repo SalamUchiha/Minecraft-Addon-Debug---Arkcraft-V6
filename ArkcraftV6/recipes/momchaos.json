@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:ja452ula"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "1x"
+    ],
+    "key": {
+      "x": {
+        "item": "arkcraft:mom_fish"
+      },
+      "1": {
+        "item": "arkcraft:chaos_fish"
+      }
+    },
+    "result": {
+      "item": "arkcraft:chaos_fish",
+      "count": 2
+
+    }
+  }
+}

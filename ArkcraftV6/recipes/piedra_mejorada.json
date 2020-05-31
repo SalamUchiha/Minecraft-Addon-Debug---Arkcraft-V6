@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:piedra_mejorada"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ccx",
+      "ccc",
+      "ccc"
+    ],
+    "key": {
+      "c": {
+        "item": "arkcraft:cementing_paste"
+      },
+      "x": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "result": {
+      "item": "arkcraft:piedra_mejorada",     "count": 2
+    }
+  }
+}

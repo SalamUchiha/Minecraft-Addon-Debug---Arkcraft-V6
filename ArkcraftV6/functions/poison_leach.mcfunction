@@ -1,0 +1,1 @@
+effect @e[r=3, type=!arkcraft:poison_leach] fatal_poison 1 0

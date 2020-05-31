@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "arkcraft:metal",
+      "is_experimental": false,
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/metal.json"
+      },
+      "minecraft:destroy_time": {
+        "value":  480.0
+      },
+            "minecraft:block_light_absorption": {
+                "value": 2.0
+            },
+      "minecraft:map_color": {
+        "color": "#383838"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:skull"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "LX"
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:wooden_pickaxe"
+      },
+      "X": {
+        "item": "minecraft:bone_block"
+      }
+    },
+    "result": {
+      "item": "minecraft:skull"
+    }
+  }
+}

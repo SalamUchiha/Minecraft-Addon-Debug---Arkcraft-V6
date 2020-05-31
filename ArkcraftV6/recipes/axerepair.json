@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:golden_axe2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "LI"
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:redstone_wire"
+      },
+      "I": {
+        "item": "minecraft:golden_axe"
+      }
+    },
+    "result": {
+      "item": "minecraft:golden_axe"
+    }
+  }
+}

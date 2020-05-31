@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:estructura_tek"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "mmm",
+      "ttt"
+    ],
+    "key": {
+      "m": {
+        "item": "arkcraft:metal"
+      },
+      "t": {
+        "item": "arkcraft:elemento"
+      }
+    },
+    "result": {
+      "item": "arkcraft:estructura_tek",     "count": 3
+    }
+  }
+}

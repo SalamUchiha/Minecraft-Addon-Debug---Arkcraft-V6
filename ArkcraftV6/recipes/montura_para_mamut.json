@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_para_mamut"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "xxx",
+      "ccc",
+      "xxx"
+    ],
+   "key": {
+      "x": {
+        "item": "arkcraft:placa_de_metal"
+      },
+      "c": {
+        "item": "minecraft:wool"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_para_mamut"
+    }
+  }
+}

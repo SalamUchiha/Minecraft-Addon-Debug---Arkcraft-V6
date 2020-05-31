@@ -1,0 +1,1 @@
+effect @e[r=3, type=!arkcraft:paralyzing_leach] slowness 60 255

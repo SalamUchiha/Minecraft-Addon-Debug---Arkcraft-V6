@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:gel"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "c0"
+    ],
+   "key": {
+      "c": {
+        "item": "minecraft:slime_ball"
+      },
+      "0": {
+        "item": "arkcraft:aceite"
+      }
+    },
+    "result": {
+      "item": "arkcraft:gel",
+      "count": 5
+    }
+  }
+}

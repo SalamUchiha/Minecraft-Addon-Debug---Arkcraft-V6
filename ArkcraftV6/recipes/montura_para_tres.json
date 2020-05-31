@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_para_tres"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ccc"
+    ],
+   "key": {
+      "c": {
+        "item": "arkcraft:montura_para_mamut"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_para_tres"
+    }
+  }
+}

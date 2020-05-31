@@ -1,0 +1,854 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+     "identifier": "arkcraft:yutyrannus",
+      "is_spawnable": true,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:yutyrannus_melee": {
+      
+	  "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "target_dist": 100.0,
+        "track_target": true
+      }
+      },
+      "minecraft:yutyrannus_roar": {
+      
+        "minecraft:on_target_acquired": {},
+	  "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "target_dist": 100.0,
+        "track_target": true
+      },
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "probability": 100.0,
+          "summon_choices": [
+            {
+              "weight": 1,
+              "cooldown_time": 40,
+              "cast_duration": 2.0,
+              "start_sound_event": "plop",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 0,
+                  "entity_type": "",
+                  "entity_lifespan": 10.0,
+                  "size": 10.0,
+                  "sound_event": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "minecraft:yutyrannus_roar_domado": {
+	  "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "target_dist": 100.0,
+        "track_target": true
+      },
+      
+        "minecraft:on_target_acquired": {},
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "probability": 100.0,
+          "summon_choices": [
+            {
+              "weight": 1,
+              "cooldown_time": 40,
+              "cast_duration": 2.0,
+              "start_sound_event": "plop",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 3,
+                  "entity_type": "arkcraft:fuerza_oculta",
+                  "entity_lifespan": 10.0,
+                  "size": 10.0,
+                  "sound_event": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      
+      "minecraft:yutyrannus_salvaje_adult":{
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo",
+          "cobblestone",
+          "log",
+          "log2",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log",
+          "stripped_spruce_log",
+          "stripped_oak_log",
+          "stripped_jungle_log",
+          "stripped_dark_oak_log",
+          "stripped_birch_log",
+          "bamboo_sapling",
+          "beetroot",
+          "brown_mushroom",
+          "carrots",
+          "carved_pumpkin",
+          "chorus_flower",
+          "chorus_plant",
+          "deadbush",
+          "double_plant",
+          "leaves",
+          "leaves2",
+          "lit_pumpkin",
+          "melon_block",
+          "melon_stem",
+          "potatoes",
+          "pumpkin",
+          "pumpkin_stem",
+          "red_flower",
+          "red_mushroom",
+          "reeds",
+          "sapling",
+          "snow_layer",
+          "sweet_berry_bush",
+          "tallgrass",
+          "turtle_egg",
+          "vine",
+          "waterlily",
+          "wheat",
+          "yellow_flower",
+          "minecraft:acacia_button",
+          "minecraft:acacia_door",
+      "minecraft:acacia_fence_gate",
+          "minecraft:acacia_pressure_plate",
+          "minecraft:acacia_sign",
+          "minecraft:acacia_stairs",
+          "minecraft:acacia_trapdoor",
+          "minecraft:banner",
+          "minecraft:birch_button",
+          "minecraft:birch_door",
+          "minecraft:birch_fence_gate",
+          "minecraft:birch_pressure_plate",
+          "minecraft:birch_sign",
+          "minecraft:birch_trapdoor",
+          "minecraft:bookshelf",
+          "minecraft:cactus",
+          "minecraft:campfire",
+         "minecraft:cartography_table",
+          "minecraft:carved_pumpkin",
+          "minecraft:chest",
+          "minecraft:coal_block",
+      "minecraft:composter",
+          "minecraft:crafting_table",
+          "minecraft:dark_oak_button",
+          "minecraft:dark_oak_door",
+          "minecraft:dark_oak_fence_gate",
+          "minecraft:dark_oak_pressure_plate",
+          "minecraft:dark_oak_stairs",
+          "minecraft:dark_oak_trapdoor",
+          "minecraft:darkoak_sign",
+          "minecraft:dried_kelp_block",
+          "minecraft:fence",
+          "minecraft:fence_gate",
+          "minecraft:fletching_table",
+          "minecraft:glass",
+          "minecraft:glass_pane",
+         "minecraft:jukebox",
+          "minecraft:jungle_button",
+          
+          "minecraft:jungle_door",
+          "minecraft:jungle_fence_gate",
+          "minecraft:jungle_pressure_plate",
+          "minecraft:jungle_sign",
+          "minecraft:jungle_stairs",
+          "minecraft:jungle_trapdoor",
+          "minecraft:ladder",
+          "minecraft:lectern",
+          "minecraft:lever",
+          "minecraft:lit_pumpkin",
+          "minecraft:loom",
+          "minecraft:melon_block",
+          "minecraft:oak_stairs",
+          "minecraft:planks",
+          "minecraft:stained_glass",
+          "minecraft:spruce_button",
+          "minecraft:spruce_door",
+          "minecraft:spruce_fence_gate",
+          "minecraft:spruce_pressure_plate",
+          "minecraft:spruce_sign",
+          "minecraft:spruce_stairs",
+          "minecraft:spruce_trapdoor",
+          "minecraft:stained_glass_pane",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_birch_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_oak_log",
+          "minecraft:stripped_spruce_log",
+          "minecraft:trapdoor",
+          "minecraft:trapped_chest",
+          "minecraft:wood",
+          "minecraft:wooden_button",
+          "minecraft:wooden_door",
+          "minecraft:wooden_pressure_plate",
+          "minecraft:wooden_slab",
+          "minecraft:wool"
+        ]
+      },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 5.0,
+          "outside_range": 6.0,
+          "on_inside_range": {
+            "event": "minecraft:melee",
+            "target": "self"
+          },
+          "on_outside_range": {
+            "event": "minecraft:roar",
+            "target": "self"
+          }
+        },
+        "minecraft:spawn_entity":[ {
+          "min_wait_time": 890,
+          "max_wait_time": 900,
+          "spawn_item": "arkcraft:yutyrannus_egg"
+        }
+        ],
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 20 : 0"
+      },
+      "minecraft:health": {
+        "value": 2000,
+        "max": 2000
+      },
+      "minecraft:follow_range": {
+        "value": 60,
+        "max": 60
+      },
+	    "minecraft:behavior.nearest_attackable_target": {
+          "priority": 5,
+        "reselect_targets": true,
+          "within_radius": 20,
+          "entity_types": [
+            {
+              "filters": { "other_with_families": [ "cow" , "sheep" , "chicken" , "rabbit" , "gian_cow"  , "parrot_wild" , "parrot_tame", "horse" , "donkey" , "mule" , "villager" , "pig" , "blaze" , "cat" , "ocelot" , "arthropod" , "enderman" , "endermite"  , "irongolen" , "snowgolem" , "llama" , "magmacube" , "mushroomcow" , "panda" , "pillager" , "player"  , "shulker" , "illager" , "witch" , "dodo" , "polarbear" , "vaca_jungla" , "hesperornis" , "zombie_pigman" , "irongolem" , "snow_golem" , "monster" , "ark" , "daeodon" , "wolf" , "bat" , "turtle", "fox" , "wandering_trader"] },
+             "max_dist": 100
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:on_hurt_by_player": {},
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 2
+      },
+        "minecraft:scale": {
+          "value": 1.8
+        },
+        "minecraft:tameable": {
+          "probability": 0.093,
+          "tame_items": ["minecraft:muttonraw" , "arkcraft:pulmonoscorpius_egg"] ,
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+      },
+      
+      "minecraft:yutyrannus_baby_salvaje": {
+        "minecraft:is_baby": {
+},
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "muttonraw"
+        ]
+      },
+        "minecraft:scale": {
+          "value": 0.3
+        },
+        "minecraft:tameable": {
+          "probability": 0.233,
+          "tame_items": "minecraft:muttonraw",
+          "tame_event": {
+            "event": "minecraft:on_tame_baby",
+            "target": "self"
+          }
+        }
+      },
+
+      "minecraft:yutyrannus_adult_domado": {
+	    "minecraft:behavior.nearest_attackable_target": {
+          "priority": 5,
+        "reselect_targets": true,
+          "within_radius": 20,
+          "entity_types": [
+            {
+              "filters": { "other_with_families": [ "cow" , "sheep" , "chicken" , "rabbit" , "gian_cow"  , "parrot_wild" , "parrot_tame", "horse" , "donkey" , "mule" , "villager" , "pig" , "blaze" , "cat" , "ocelot" , "arthropod" , "enderman" , "endermite"  , "irongolen" , "snowgolem" , "llama" , "magmacube" , "mushroomcow" , "panda" , "pillager"   , "shulker" , "illager" , "witch" , "dodo" , "polarbear" , "vaca_jungla" , "hesperornis" , "zombie_pigman" , "irongolem" , "snow_golem" , "monster" , "ark" , "daeodon" , "wolf" , "bat" , "turtle", "fox" , "wandering_trader"] },
+             "max_dist": 100
+            },
+            {
+            "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                ]
+              }
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 5.0,
+          "outside_range": 6.0,
+          "on_inside_range": {
+            "event": "minecraft:melee",
+            "target": "self"
+          },
+          "on_outside_range": {
+            "event": "minecraft:roar_domado",
+            "target": "self"
+          }
+        },
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo", 
+          "log",
+          "log2",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log",
+          "stripped_spruce_log",
+          "stripped_oak_log",
+          "stripped_jungle_log",
+          "stripped_dark_oak_log",
+          "stripped_birch_log",
+          "bamboo_sapling",
+          "beetroot",
+          "brown_mushroom",
+          "carrots",
+          "carved_pumpkin",
+          "chorus_flower",
+          "chorus_plant",
+          "deadbush",
+          "double_plant",
+          "leaves",
+          "leaves2",
+          "lit_pumpkin",
+          "melon_block",
+          "melon_stem",
+          "potatoes",
+          "pumpkin",
+          "pumpkin_stem",
+          "red_flower",
+          "red_mushroom",
+          "reeds",
+          "sapling",
+          "snow_layer",
+          "sweet_berry_bush",
+          "tallgrass",
+          "turtle_egg",
+          "vine",
+          "waterlily",
+          "wheat",
+          "yellow_flower",
+          "minecraft:acacia_button",
+          "minecraft:acacia_door",
+      "minecraft:acacia_fence_gate",
+          "minecraft:acacia_pressure_plate",
+          "minecraft:acacia_sign",
+          "minecraft:acacia_stairs",
+          "minecraft:acacia_trapdoor",
+          "minecraft:banner",
+          "minecraft:birch_button",
+          "minecraft:birch_door",
+          "minecraft:birch_fence_gate",
+          "minecraft:birch_pressure_plate",
+          "minecraft:birch_sign",
+          "minecraft:birch_trapdoor",
+          "minecraft:bookshelf",
+          "minecraft:cactus",
+          "minecraft:campfire",
+         "minecraft:cartography_table",
+          "minecraft:carved_pumpkin",
+          "minecraft:chest",
+          "minecraft:coal_block",
+      "minecraft:composter",
+          "minecraft:crafting_table",
+          "minecraft:dark_oak_button",
+          "minecraft:dark_oak_door",
+          "minecraft:dark_oak_fence_gate",
+          "minecraft:dark_oak_pressure_plate",
+          "minecraft:dark_oak_stairs",
+         "minecraft:dark_oak_trapdoor",
+          "minecraft:darkoak_sign",
+          "minecraft:dried_kelp_block",
+          "minecraft:fence",
+          "minecraft:fence_gate",
+          "minecraft:fletching_table",
+          "minecraft:glass",
+          "minecraft:glass_pane",
+         "minecraft:jukebox",
+          "minecraft:jungle_button",
+          "minecraft:jungle_door",
+         "minecraft:jungle_fence_gate",
+          "minecraft:jungle_pressure_plate",
+          "minecraft:jungle_sign",
+          "minecraft:jungle_stairs",
+          "minecraft:jungle_trapdoor",
+          "minecraft:ladder",
+          "minecraft:lectern",
+          "minecraft:lever",
+          "minecraft:lit_pumpkin",
+          "minecraft:loom",
+          "minecraft:melon_block",
+          "minecraft:oak_stairs",
+          "minecraft:planks",
+          "minecraft:stained_glass",
+          "minecraft:spruce_button",
+          "minecraft:spruce_door",
+         "minecraft:spruce_fence_gate",
+          "minecraft:spruce_pressure_plate",
+          "minecraft:spruce_sign",
+          "minecraft:spruce_stairs",
+          "minecraft:spruce_trapdoor",
+          "minecraft:stained_glass_pane",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_birch_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_oak_log",
+          "minecraft:stripped_spruce_log",
+          "minecraft:trapdoor",
+          "minecraft:trapped_chest",
+          "minecraft:wood",
+          "minecraft:wooden_button",
+          "minecraft:wooden_door",
+          "minecraft:wooden_pressure_plate",
+          "minecraft:wooden_slab",
+          "minecraft:wool"
+        ]
+      },
+    "minecraft:spawn_entity":[ {
+          "min_wait_time": 890,
+          "max_wait_time": 900,
+          "spawn_sound": "plop",
+          "spawn_item": "arkcraft:fuerza_oculta"
+        },
+        {
+          "min_wait_time": 850,
+          "max_wait_time": 900,
+          "spawn_item": "arkcraft:yutyrannus_egg"
+        }
+        ],
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(3,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(3,3) : 0"
+        },
+        "minecraft:is_tamed": {
+        },
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "muttonraw"
+        ]
+      },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 6
+        },
+        "minecraft:behavior.breed": {
+          "priority": 7
+        },
+
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "muttonraw",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          }
+        ]
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+        "minecraft:sittable": {
+        },
+        "minecraft:scale": {
+          "value": 1.8
+        },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      }
+        },
+      "minecraft:yutyrannus_baby_domado":{
+        "minecraft:is_baby": {
+},
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+        "minecraft:scale_by_age": {
+          "start_scale": 0.3,
+          "end_scale": 1.8
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 4
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "muttonraw",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          }
+        ]
+      },
+        "minecraft:is_tamed": {
+},
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "muttonraw"
+        ]
+      },
+        "minecraft:sittable": {
+        },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+        "minecraft:ageable": {
+          "duration":3000,
+          "feed_items": [
+            {
+              "item": "muttonraw",
+              "growth": 0.010
+            },
+            {
+              "item": "porkchop",
+              "growth": 0.05
+            },
+            {
+              "item": "beef",
+              "growth": 0.05
+            }
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up_domado",
+            "target": "self"
+          }
+        }
+      },
+
+      "minecraft:yutyrannus_baby": {
+        "minecraft:behavior.panic": {
+          "priority": 1,
+          "speed_multiplier": 1.0
+        },
+      "minecraft:attack": {
+        "damage": 3
+      },
+        "minecraft:behavior.follow_parent": {
+          "priority": 9,
+          "speed_multiplier": 1.0,
+          "start_distance": 30,
+          "stop_distance": 15
+        }
+      },
+      "minecraft:yutyrannus_adult": {
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:attack": {
+        "damage": 10
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/yutyrannus.json"
+        },
+        "minecraft:behavior.breed": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:breedable": {
+          "require_tame": true,
+          "breeds_with": {
+            "mate_type": "arkcraft:yutyrannus",
+            "baby_type": "arkcraft:yutyrannus",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [ "muttonraw"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "yutyrannus", "mob" , "carnivoro"]
+      },
+	  "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "target_dist": 1.0,
+        "track_target": true
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+        "minecraft:movement": {
+          "value": {
+            "range_min": 0.55,
+            "range_max": 0.55
+          }
+        },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.5
+      },
+      "minecraft:balloonable": {
+        "mass": 0.75
+      },
+      "minecraft:behavior.float": {
+        "priority": 2
+      },
+
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:follow_range": {
+        "value": 50
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 50,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:yutyrannus_salvaje_adult",
+                "minecraft:yutyrannus_adult",
+ "minecraft:yutyrannus_roar"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:yutyrannus_baby",
+                "minecraft:yutyrannus_baby_salvaje"
+              ]
+
+            }
+          }
+        ]
+      },
+      "minecraft:roar_domado":{        "remove": {
+          "component_groups": [
+   "minecraft:yutyrannus_melee"
+   ]
+        },
+        "add": {
+          "component_groups": [
+    "minecraft:roar_domado"
+          ]
+        }
+      },
+      "minecraft:melee":{      
+          "add": {
+          "component_groups": [
+   "minecraft:yutyrannus_melee"
+   ]
+        },
+        "remove": {
+          "component_groups": [
+    "minecraft:yutyrannus_roar",
+    "minecraft:roar_domado"
+          ]
+        }
+      },
+      "minecraft:roar":{        "remove": {
+          "component_groups": [
+   "minecraft:yutyrannus_melee"
+   ]
+        },
+        "add": {
+          "component_groups": [
+    "minecraft:yutyrannus_roar"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:yutyrannus_baby",
+            "minecraft:yutyrannus_baby_domado"
+          ]
+        }
+      },
+
+      "minecraft:ageable_grow_up": {
+        "remove": {
+          "component_groups": [
+            "minecraft:yutyrannus_baby_salvaje",
+            "minecraft:yutyrannus_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:yutyrannus_salvaje_adult_salvaje",
+   "minecraft:yutyrannus_tranquilo",
+"minecraft:yutyrannus_salvaje",
+            "minecraft:yutyrannus_salvaje_adult"
+          ]
+        }
+      },
+      "minecraft:ageable_grow_up_domado": {
+        "remove": {
+          "component_groups": [
+            "minecraft:yutyrannus_baby_domado",
+            "minecraft:yutyrannus_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+                "minecraft:yutyrannus_adult",
+           "minecraft:yutyrannus_adult_domado",
+   "minecraft:roar_domado"
+      ]
+        }
+      },
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "minecraft:yutyrannus_salvaje_adult",
+      "minecraft:yutyrannus_roar"
+            
+          ]
+        },
+        "add": {
+          "component_groups": [
+           "minecraft:yutyrannus_adult_domado",
+   "minecraft:yutyrannus_roar_domado"
+          ]
+        }
+      },
+      "minecraft:on_tame_baby": {
+        "remove": {
+          "component_groups": [
+            "minecraft:yutyrannus_baby_salvaje"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:yutyrannus_baby_domado"
+          ]
+        }
+      }
+    }
+  }
+}
+ 

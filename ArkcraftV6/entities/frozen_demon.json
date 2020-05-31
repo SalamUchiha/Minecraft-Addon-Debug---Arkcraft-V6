@@ -1,0 +1,5475 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+     "identifier": "arkcraft:frozen_demon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+
+"minecraft:normal":{
+    
+      "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 1.2,
+        "track_target": false,
+        "reach_multiplier": 1.0
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+"minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:type_family": {
+        "family": [ "frozen_demon_normal", "mob" ]
+      },
+        "minecraft:attack": {
+          "damage": {
+            "range_min": 5,
+            "range_max": 14
+          }
+        },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.2, 
+          "range_max": 0.35
+        }
+      },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 28,
+          "max": 40
+        }
+},
+"minecraft:debil":{
+      "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 1.2,
+        "track_target": false,
+        "reach_multiplier": 1.0
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+"minecraft:variant": {
+          "value": 1
+        },
+      "minecraft:type_family": {
+        "family": [ "frozen_demon_debil" , "mob" ]
+      },
+        "minecraft:attack": {
+          "damage": {
+            "range_min": 5,
+            "range_max": 8
+          }
+        },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.3, 
+          "range_max": 0.45
+        }
+      },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(0,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 28,
+          "max": 40
+        }
+},
+"minecraft:fuerte":{
+      "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 1.2,
+        "track_target": false,
+        "reach_multiplier": 1.0
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+"minecraft:variant": {
+          "value": 2
+        },
+      "minecraft:type_family": {
+        "family": [ "frozen_demon_fuerte", "mob" ]
+      },
+        "minecraft:attack": {
+          "damage": {
+            "range_min": 14,
+            "range_max": 38
+          }
+        },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.2, 
+          "range_max": 0.35
+        }
+      },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(4,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 50,
+          "max": 80
+        }
+},
+"minecraft:largo":{
+      "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 2.0,
+        "track_target": false,
+        "reach_multiplier": 1.0
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+"minecraft:variant": {
+          "value": 3
+        },
+      "minecraft:type_family": {
+        "family": [ "frozen_demon_largo" , "mob"]
+      },
+        "minecraft:attack": {
+          "damage": {
+            "range_min": 7,
+            "range_max": 20
+          }
+        },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.29, 
+          "range_max": 0.4
+        }
+      },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+	    "minecraft:health": {
+          "value": 14,
+          "max": 20
+        }
+},
+
+
+"minecraft:normal_salvaje":{
+
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+
+
+
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.2, 
+          "range_max": 0.35
+        }
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/frozen_demon_normal.json"
+        },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 28,
+          "max": 40
+        }
+},
+"minecraft:debil_salvaje":{
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+
+
+
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.3, 
+          "range_max": 0.45
+        }
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/frozen_demon_debil.json"
+        },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(0,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 28,
+          "max": 40
+        }
+},
+"minecraft:fuerte_salvaje":{
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+
+
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.2, 
+          "range_max": 0.35
+        }
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/frozen_demon_fuerte.json"
+        },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(4,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 50,
+          "max": 80
+        }
+},
+"minecraft:largo_salvaje":{
+
+
+
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.29, 
+          "range_max": 0.4
+        }
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/frozen_demon_largo.json"
+        },
+
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+	    "minecraft:health": {
+          "value": 14,
+          "max": 20
+        }
+},
+
+"sin_horario_normal":{
+        "minecraft:timer": {
+          "time": [ 30 , 30 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            }
+          ],
+          "must_see": false
+}
+},
+"murcielago_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bat"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"gallina_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "chicken"],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"pescado_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cod"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fish"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "salmon"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tropicalfish"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"vaca_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "beef"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"caballo_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mule"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"zorro_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"oso_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "panda"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "polarbear"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"cerdo_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "porkchop"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"conejo_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rabbit"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"oveja_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "muttonraw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"calamar_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"tortuga_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "turtle"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "seaturtle"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon",
+            "turtle_egg"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"humanos_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pillager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "vindicator"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "illager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "witch"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "evoker"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player "}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rotten_flesh"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"abeja_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bee"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "honeycomb"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"araña_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "spider"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cavespider"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "spider_eye"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"delfin_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "dolphin"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+    
+},
+"llama_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"lobo_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wolf"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"frozen_demon_fuerte_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_fuerte"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_largo_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_normal_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_normal"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_debil_normal":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:normal_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_debil"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+
+"sin_horario_fuerte":{
+        "minecraft:timer": {
+          "time": [ 30 , 30 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            }
+          ],
+          "must_see": false
+}
+},
+"murcielago_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bat"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"gallina_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "chicken"],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"pescado_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cod"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fish"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "salmon"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tropicalfish"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"vaca_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "beef"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"caballo_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mule"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"zorro_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"oso_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "panda"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "polarbear"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"cerdo_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "porkchop"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"conejo_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rabbit"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"oveja_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "muttonraw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"calamar_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"tortuga_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "turtle"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "seaturtle"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon",
+            "turtle_egg"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"humanos_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pillager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "vindicator"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "illager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "witch"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "evoker"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player "}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rotten_flesh"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"abeja_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bee"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "honeycomb"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"araña_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "spider"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cavespider"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "spider_eye"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"delfin_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "dolphin"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+    
+},
+"llama_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"lobo_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wolf"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"frozen_demon_fuerte_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_fuerte"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_largo_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_normal_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_fuerte"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_debil_fuerte":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:fuerte_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_debil"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+
+"sin_horario_largo":{
+        "minecraft:timer": {
+          "time": [ 30 , 30 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            }
+          ],
+          "must_see": false
+}
+},
+"murcielago_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bat"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"gallina_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "chicken"],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"pescado_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cod"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fish"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "salmon"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tropicalfish"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"vaca_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "beef"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"caballo_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mule"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"zorro_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"oso_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "panda"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "polarbear"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"cerdo_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "porkchop"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"conejo_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rabbit"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"oveja_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "muttonraw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"calamar_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"tortuga_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "turtle"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "seaturtle"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon",
+            "turtle_egg"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"humanos_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pillager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "vindicator"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "illager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "witch"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "evoker"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player "}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rotten_flesh"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"abeja_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bee"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "honeycomb"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"araña_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "spider"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cavespider"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "spider_eye"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"delfin_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "dolphin"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+    
+},
+"llama_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"lobo_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wolf"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"frozen_demon_fuerte_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_largo_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_normal_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_debil_largo":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:largo_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+
+"sin_horario_debil":{
+        "minecraft:timer": {
+          "time": [ 30 , 30 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            }
+          ],
+          "must_see": false
+}
+},
+"murcielago_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bat"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"gallina_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "chicken"],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"pescado_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cod"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fish"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "salmon"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tropicalfish"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"vaca_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "beef"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"caballo_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mule"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"zorro_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"oso_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "panda"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "polarbear"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"cerdo_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "porkchop"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"conejo_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rabbit"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"oveja_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "muttonraw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"calamar_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"tortuga_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "turtle"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "seaturtle"}
+
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon",
+            "turtle_egg"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"humanos_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "pillager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "vindicator"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "illager"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "witch"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "evoker"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player "}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "rotten_flesh"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"abeja_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "bee"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "honeycomb"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"araña_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "spider"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cavespider"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "spider_eye"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"delfin_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "dolphin"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "clownfish",
+            "fish",
+            "salmon" 
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+    
+},
+"llama_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"lobo_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wolf"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+}
+},
+"frozen_demon_fuerte_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_debil"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_largo_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_largo"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_normal_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_debil"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+"frozen_demon_debil_debil":{
+        "minecraft:timer": {
+          "time": [ 300 , 300 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:debil_no_caza",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+             
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}  ,  { "test" :  "is_family", "subject" : "other", "value" :  "fire"}
+                ] 
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "frozen_demon_debil"}
+                ] 
+              },
+              "max_dist": 500
+            }
+          ],
+          "must_see": false
+},
+        "minecraft:tameable": {
+          "probability": 0.9,
+          "tame_items": [
+            "frozen_demon_meat_raw"
+            ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+},
+
+"minecraft:domado":{
+     "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+        "minecraft:sittable": {
+          "sit_event": {
+            "event": "minecraft:sentado",
+            "target": "self"
+          },
+          "stand_event": {
+            "event": "minecraft:levantado",
+            "target": "self"
+        }
+        },
+        "minecraft:inventory": {
+          "inventory_size": 20,
+          "container_type": "horse",
+          "additional_slots_per_strength": 2
+        },
+
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "arkcraft:montura_de_frozen_demon",
+            "accepted_items": ["arkcraft:montura_de_frozen_demon"],
+            "on_equip": {
+              "event": "minecraft:on_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled"
+            }
+          }
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_porkchop",
+            "heal_amount": 8
+          },
+          {
+            "item": "fish",
+            "heal_amount": 2
+          },
+          {
+            "item": "salmon",
+            "heal_amount": 2
+          },
+          {
+            "item": "clownfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "pufferfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "cooked_fish",
+            "heal_amount": 5
+          },
+          {
+            "item": "cooked_salmon",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_beef",
+            "heal_amount": 8
+          },
+          {
+            "item": "chicken",
+            "heal_amount": 2
+          },
+          {
+            "item": "cooked_chicken",
+            "heal_amount": 6
+          },
+          {
+            "item": "muttonRaw",
+            "heal_amount": 2
+          },
+          {
+            "item": "muttonCooked",
+            "heal_amount": 6
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 4
+          },
+          {
+            "item": "rabbit",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_rabbit",
+            "heal_amount": 5
+          },
+          {
+            "item": "rabbit_stew",
+            "heal_amount": 10
+          }
+        ]
+      },
+        "minecraft:is_tamed": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+"minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      }
+    
+},
+
+"minecraft:con_montura":{
+ 
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+}
+},
+"minecraft:sin_montura":{
+      "minecraft:follow_range": {
+        "value": 20,
+        "max": 22
+      }
+},
+"minecraft:sentado":{
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      }
+},
+"minecraft:levantado":{
+        "minecraft:rideable": {
+          "priority": 0,
+          "seat_count": 1,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, 1.3, 0.0 ]
+          }
+
+        }
+}
+
+
+
+
+
+
+
+    },
+    "components": {
+        "minecraft:scale": {
+          "value": 1.5
+        },
+      "minecraft:collision_box": {
+        "width": 1.3,
+        "height": 0.8
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": true,
+        "can_sink": true
+      },
+      "minecraft:jump.static": {
+        "jump_power": 0.6
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.15
+      },
+      "minecraft:breathable": {
+        "total_supply": 300,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": false,
+        "generates_bubbles": false
+      },
+      "minecraft:follow_range": {
+        "value": 300,
+        "max": 350
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:balloonable": {
+        "mass": 0.75
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.3, 
+          "range_max": 1.3
+        }
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 1,
+        "target_dist": 0.7
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+ "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 80,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:normal",
+                "minecraft:normal_salvaje",
+                "sin_horario_normal"
+              ]
+            }
+          },
+          {
+            "weight": 100,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:debil",
+                "minecraft:debil_salvaje",
+                "sin_horario_debil"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:fuerte",
+                "minecraft:fuerte_salvaje",
+                "sin_horario_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                 "minecraft:largo",
+                "minecraft:largo_salvaje",
+                "sin_horario_largo"
+              ]
+            }
+          }
+]
+      },
+    
+      "minecraft:largo_no_caza": {
+        "remove": {
+          "component_groups": [
+            
+                "sin_horario_largo",
+"murcielago_largo",
+"gallina_largo",
+"pescado_largo",
+"vaca_largo",
+"caballo_largo",
+"zorro_largo",
+"oso_largo",
+"cerdo_largo",
+"conejo_largo",
+"oveja_largo",
+"calamar_largo",
+"tortuga_largo",
+"humanos_largo",
+"abeja_largo",
+"araña_largo",
+"delfin_largo",
+"llama_largo",
+"lobo_largo",
+"frozen_demon_fuerte_largo",
+"frozen_demon_largo_largo",
+"frozen_demon_normal_largo",
+"frozen_demon_debil_largo"
+
+]
+        },
+        "add": {
+          "component_groups": [
+                "minecraft:sin_horario_largo"
+
+
+          ]
+        }
+      }
+     ,
+      "minecraft:debil_no_caza": {
+        "remove": {
+          "component_groups": [
+            
+                "sin_horario_debil",
+"murcielago_debil",
+"gallina_debil",
+"pescado_debil",
+"vaca_debil",
+"caballo_debil",
+"zorro_debil",
+"oso_debil",
+"cerdo_debil",
+"conejo_debil",
+"oveja_debil",
+"calamar_debil",
+"tortuga_debil",
+"humanos_debil",
+"abeja_debil",
+"araña_debil",
+"delfin_debil",
+"llama_debil",
+"lobo_debil",
+"frozen_demon_fuerte_debil",
+"frozen_demon_largo_debil",
+"frozen_demon_normal_debil",
+"frozen_demon_debil_debil"
+
+]
+        },
+        "add": {
+          "component_groups": [
+                "minecraft:sin_horario_debil"
+
+
+          ]
+        }
+      }
+ ,
+      "minecraft:fuerte_no_caza": {
+        "remove": {
+          "component_groups": [
+            
+                "sin_horario_fuerte",
+"murcielago_fuerte",
+"gallina_fuerte",
+"pescado_fuerte",
+"vaca_fuerte",
+"caballo_fuerte",
+"zorro_fuerte",
+"oso_fuerte",
+"cerdo_fuerte",
+"conejo_fuerte",
+"oveja_fuerte",
+"calamar_fuerte",
+"tortuga_fuerte",
+"humanos_fuerte",
+"abeja_fuerte",
+"araña_fuerte",
+"delfin_fuerte",
+"llama_fuerte",
+"lobo_fuerte",
+"frozen_demon_fuerte_fuerte",
+"frozen_demon_largo_fuerte",
+"frozen_demon_normal_fuerte",
+"frozen_demon_debil_fuerte"
+
+]
+        },
+        "add": {
+          "component_groups": [
+                "minecraft:sin_horario_fuerte"
+
+
+          ]
+        }
+      },
+ "minecraft:normal_caza": {
+        "randomize": [
+          {
+            "weight": 5,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"murcielago_normal"
+              ]
+            }
+          },
+          {
+            "weight": 35,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"gallina_normal"
+              ]
+            }
+          },
+          {
+            "weight": 100,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"pescado_normal"
+              ]
+            }
+          },
+          {
+            "weight": 20,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"vaca_normal"
+              ]
+            }
+          },
+          {
+            "weight": 10,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"caballo_normal"
+              ]
+            }
+          },
+          {
+            "weight": 15,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"zorro_normal"
+              ]
+            }
+          },
+          {
+            "weight": 20,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"cerdo_normal"
+              ]
+            }
+          },
+          {
+            "weight": 80,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"conejo_normal"
+              ]
+            }
+          },
+          {
+            "weight": 80,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"oveja_normal"
+              ]
+            }
+          },
+          {
+            "weight": 36,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"humanos_normal"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"abeja_normal"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"llama_normal"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"lobo_normal"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_fuerte_normal"
+              ]
+            }
+          },
+          {
+            "weight": 25,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_largo_normal"
+              ]
+            }
+          },
+          {
+            "weight": 20,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_normal_normal"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_normal"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_debil_normal"
+              ]
+            }
+          }
+          
+          
+          
+          
+          
+]
+      },
+ "minecraft:fuerte_caza": {
+        "randomize": [
+          {
+            "weight": 5,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"murcielago_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 10,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"gallina_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"pescado_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"vaca_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"caballo_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 20,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"zorro_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 85,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"oso_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"cerdo_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"conejo_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 60,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"oveja_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 70,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"calamar_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"tortuga_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"humanos_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"abeja_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"araña_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 45,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"delfin_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"llama_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"lobo_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 15,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_fuerte_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_largo_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_normal_fuerte"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_fuerte"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_debil_fuerte"
+              ]
+            }
+          }
+          
+          
+          
+          
+          
+]
+      },
+ "minecraft:largo_caza": {
+        "randomize": [
+          {
+            "weight": 15,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"murcielago_largo"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"gallina_largo"
+              ]
+            }
+          },
+          {
+            "weight": 100,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"pescado_largo"
+              ]
+            }
+          },
+
+    
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"zorro_largo"
+              ]
+            }
+          },
+         
+          {
+            "weight": 15,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"cerdo_largo"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"conejo_largo"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"oveja_largo"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"calamar_largo"
+              ]
+            }
+          },
+
+          {
+            "weight": 45,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"humanos_largo"
+              ]
+            }
+          },
+          {
+            "weight": 15,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"abeja_largo"
+              ]
+            }
+          },
+          {
+            "weight": 35,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"araña_largo"
+              ]
+            }
+          },
+          {
+            "weight": 15,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_largo_largo"
+              ]
+            }
+          },
+          {
+            "weight": 10,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_normal_largo"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+                "component_groups":[
+"sin_horario_largo"
+                    ]
+            
+            },
+            "add": {
+              "component_groups": [
+"frozen_demon_debil_largo"
+              ]
+            }
+          }
+          
+          
+          
+          
+          
+]
+      },
+
+      "minecraft:normal_no_caza": {
+        "remove": {
+          "component_groups": [
+            
+                "sin_horario_normal",
+"murcielago_normal",
+"gallina_normal",
+"pescado_normal",
+"vaca_normal",
+"caballo_normal",
+"zorro_normal",
+"oso_normal",
+"cerdo_normal",
+"conejo_normal",
+"oveja_normal",
+"calamar_normal",
+"tortuga_normal",
+"humanos_normal",
+"abeja_normal",
+"araña_normal",
+"delfin_normal",
+"llama_normal",
+"lobo_normal",
+"frozen_demon_fuerte_normal",
+"frozen_demon_largo_normal",
+"frozen_demon_normal_normal",
+"frozen_demon_debil_normal"
+
+]
+        },
+        "add": {
+          "component_groups": [
+                "minecraft:sin_horario_normal"
+
+
+          ]
+        }
+      },
+
+
+
+
+    
+  "minecraft:sentado": {
+        "remove": {
+          "component_groups": [
+           "minecraft:levantado"
+          ]
+        },
+        "add": {
+          "component_groups": [
+          ]
+        }
+      },
+  "minecraft:levantado": {
+        "remove": {
+          "component_groups": [
+          ]
+        },
+        "add": {
+          "component_groups": [
+           "minecraft:levantado"
+          ]
+        }
+      },
+  "minecraft:on_saddled": {
+        "remove": {
+          "component_groups": [
+           "minecraft:sin_montura"
+          ]
+        },
+        "add": {
+          "component_groups": [
+           "minecraft:con_montura"
+          ]
+        }
+      },
+  "minecraft:off_saddled": {
+        "remove": {
+          "component_groups": [
+           "minecraft:con_montura"
+          ]
+        },
+        "add": {
+          "component_groups": [
+           "minecraft:sin_montura"
+          ]
+        }
+      },
+
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+                "minecraft:normal_salvaje",
+                "minecraft:debil_salvaje",
+                "minecraft:largo_salvaje",
+                "minecraft:fuerte_salvaje",
+                "sin_horario_normal",
+                "sin_horario_normal",
+"murcielago_normal",
+"gallina_normal",
+"pescado_normal",
+"vaca_normal",
+"caballo_normal",
+"zorro_normal",
+"oso_normal",
+"cerdo_normal",
+"conejo_normal",
+"oveja_normal",
+"calamar_normal",
+"tortuga_normal",
+"humanos_normal",
+"abeja_normal",
+"araña_normal",
+"delfin_normal",
+"llama_normal",
+"lobo_normal",
+"frozen_demon_fuerte_normal",
+"frozen_demon_largo_normal",
+"frozen_demon_normal_normal",
+"frozen_demon_debil_normal",
+"sin_horario_largo",
+"murcielago_largo",
+"gallina_largo",
+"pescado_largo",
+"vaca_largo",
+"caballo_largo",
+"zorro_largo",
+"oso_largo",
+"cerdo_largo",
+"conejo_largo",
+"oveja_largo",
+"calamar_largo",
+"tortuga_largo",
+"humanos_largo",
+"abeja_largo",
+"araña_largo",
+"delfin_largo",
+"llama_largo",
+"lobo_largo",
+"frozen_demon_largo_largo",
+"frozen_demon_largo_largo",
+"frozen_demon_largo_largo",
+"frozen_demon_largo_largo",
+"sin_horario_debil",
+"murcielago_debil",
+"gallina_debil",
+"pescado_debil",
+"vaca_debil",
+"caballo_debil",
+"zorro_debil",
+"oso_debil",
+"cerdo_debil",
+"conejo_debil",
+"oveja_debil",
+"calamar_debil",
+"tortuga_debil",
+"humanos_debil",
+"abeja_debil",
+"araña_debil",
+"delfin_debil",
+"llama_debil",
+"lobo_debil",
+"frozen_demon_debil_debil",
+"frozen_demon_largo_debil",
+"frozen_demon_debil_debil",
+"frozen_demon_debil_debil",
+"sin_horario_fuerte",
+"murcielago_fuerte",
+"gallina_fuerte",
+"pescado_fuerte",
+"vaca_fuerte",
+"caballo_fuerte",
+"zorro_fuerte",
+"oso_fuerte",
+"cerdo_fuerte",
+"conejo_fuerte",
+"oveja_fuerte",
+"calamar_fuerte",
+"tortuga_fuerte",
+"humanos_fuerte",
+"abeja_fuerte",
+"araña_fuerte",
+"delfin_fuerte",
+"llama_fuerte",
+"lobo_fuerte",
+"frozen_demon_fuerte_fuerte",
+"frozen_demon_largo_fuerte",
+"frozen_demon_fuerte_fuerte",
+"frozen_demon_debil_fuerte"
+
+]
+        },
+        "add": {
+          "component_groups": [
+                "minecraft:domado"
+,"minecraft:sin_cofre",
+"minecraft:sin_montura",
+"minecraft:levantado"
+
+          ]
+        }
+      }
+    }
+  }
+}
+ 

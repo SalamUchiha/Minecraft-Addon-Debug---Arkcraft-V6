@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_daeodon"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "313",
+       "121",
+       "343"
+    ],
+   "key": {
+      "1": {
+        "item": "arkcraft:cementing_paste"
+      },
+      "2": {
+        "item": "minecraft:saddle"
+      },
+      "4": {
+        "item": "minecraft:iron_block"
+      },
+      "3": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_de_daeodon"
+    }
+  }
+}
+
+

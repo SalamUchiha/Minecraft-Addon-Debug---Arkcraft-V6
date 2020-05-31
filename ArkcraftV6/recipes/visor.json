@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:metal"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "xxx",
+      "x1x",
+      " x "
+    ],
+    "key": {
+      "1": {
+        "item": "arkcraft:placa_de_metal"
+      },
+      "x": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "arkcraft:visor_helmet"
+    }
+  }
+}

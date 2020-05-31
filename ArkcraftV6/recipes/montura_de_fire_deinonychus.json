@@ -1,0 +1,37 @@
+
+
+
+
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_fire_deinonychus"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "111",
+       "131",
+       "222"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:obsidian"
+      },
+      "3": {
+        "item": "arkcraft:frozen_frame"
+      },
+      "1": {
+        "item": "arkcraft:piel_de_bestia_roja"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_de_fire_deinonychus"
+    }
+  }
+}
+
+
+

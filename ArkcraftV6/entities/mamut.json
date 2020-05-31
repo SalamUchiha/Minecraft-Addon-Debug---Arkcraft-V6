@@ -1,0 +1,764 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:mamut",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:baby": {
+"minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale": {
+          "value": 1.2
+        },
+
+
+        "minecraft:behavior.follow_parent": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        },
+      "minecraft:health": {
+        "value": 30
+      }
+      },
+      "minecraft:baby_wild": {
+        "minecraft:ageable": {
+          "feed_items": "cake",
+          "duration": 1200,
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up_salvaje",
+            "target": "self"
+          }
+        },
+        "minecraft:tameable": {
+          "probability": 0.6,
+          "tame_items":[ "cake", "arkcraft:pulmonoscorpius_egg"
+          ],
+          "tame_event": {
+            "event": "minecraft:on_tame_mamut_baby",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:on_scared",
+          "target": "self"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "entity_types": [
+            {
+              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+              "max_dist": 16
+            }
+          ],
+          "must_see": false
+        }
+      },
+
+      "minecraft:baby_scared": {
+        "minecraft:angry": {
+          "duration": 1,
+          "broadcast_anger": true,
+          "broadcast_range": 41,
+          "calm_event": {
+            "event": "minecraft:baby_on_calm",
+            "target": "self"
+          }
+        }
+      },
+
+      "minecraft:baby_domado": {
+        "minecraft:ageable": {
+          "feed_items": "cake",
+          "duration": 1200,
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up_domado",
+            "target": "self"
+          }
+        },
+
+        "minecraft:is_tamed": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 6
+        }
+      },
+
+      "minecraft:adult": {
+        "minecraft:scale": {
+          "value": 2.3
+        },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+    "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(1,4) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/mamut.json"
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:health": {
+        "value": 80
+      }
+      },
+      "minecraft:adult_wild": {
+"minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:interact": {
+          "interactions": [
+
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "bucket:0"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "bucket:1",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.milk"
+            }
+          ]
+      },
+        "minecraft:tameable": {
+          "probability": 0.02,
+          "tame_items":[ "cake", "arkcraft:pulmonoscorpius_egg"
+          ],
+          "tame_event": {
+            "event": "minecraft:on_tame_mamut_adult",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:on_anger",
+          "target": "self"
+        },
+        "minecraft:on_friendly_anger": {
+          "event": "minecraft:on_anger",
+          "target": "self"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "fox"
+              },
+              "max_dist": 16
+            }
+          ],
+          "must_see": false
+        }
+      },
+      "minecraft:adult_hostile": {
+      "minecraft:shooter": {
+        "type": "golpe_mamut",
+        "def": "arkcraft:golpe_mamut"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "attack_interval_min": 0,
+        "attack_interval_max": 2.0,
+        "attack_radius": 7
+      },
+        "minecraft:angry": {
+          "duration": 500,
+          "broadcast_anger": false,
+          "broadcast_range": 20,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        }
+      },
+
+      "minecraft:adult_domado": {
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "interact_text": "action.interact.ride.horse",
+        "seats": [
+          {
+            "position": [ 0.0, 1.58, 0.3 ]
+          }
+        ]
+      },
+
+        "minecraft:is_chested": {
+
+        },
+        "minecraft:is_tamed": {
+        },
+
+        "minecraft:inventory": {
+          "inventory_size": 20,
+          "container_type": "horse",
+          "additional_slots_per_strength": 1
+        },
+
+
+        "minecraft:breedable": {
+          "require_tame": true,
+          "breeds_with": {
+            "mate_type": "arkcraft:mamut",
+            "baby_type": "arkcraft:mamut",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [ "cake" , "pumpkin_pie" , "sweet_berries" , "carrot" , "golden_carrot" , "potato" , "beetroot"]
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 2,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 6
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "pumpkin_pie",
+          "golden_carrot",
+          "cake"
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "beetroot",
+            "heal_amount": 2
+          },
+          {
+            "item": "potato",
+            "heal_amount": 3
+          },
+          {
+            "item": "arkcraft:pulmonoscorpius_egg",
+            "heal_amount": 30
+          },
+          {
+            "item": "sweet_berries",
+            "heal_amount": 3
+          },
+          {
+            "item": "carrot",
+            "heal_amount": 3
+          },
+          {
+            "item": "golden_carrot",
+            "heal_amount": 10
+          },
+          {
+            "item": "pumpkin_pie",
+            "heal_amount": 10
+          }
+        ]
+      },
+        "minecraft:sittable": {
+        },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item":"arkcraft:montura_para_mamut",
+            "accepted_items": ["arkcraft:montura_para_mamut"],
+            "on_equip": {
+              "event": "minecraft:on_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled"
+            }
+          },
+          {
+            "slot": 1,
+            "item":"arkcraft:montura_para_tres",
+            "accepted_items": ["arkcraft:montura_para_tres"],
+            "on_equip": {
+              "event": "minecraft:on_saddled2"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled2"
+            }
+          }
+        ]
+      },
+      "minecraft:shooter": {
+        "type": "golpe_mamut_2",
+        "def": "arkcraft:golpe_mamut_2"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "attack_interval_min": 0,
+        "attack_interval_max": 2.0,
+        "attack_radius": 7
+}
+      },
+      "minecraft:sin_montura": {
+
+
+
+
+      },
+      "minecraft:sin_montura2": {
+"minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "minecraft:sin_cofre": {
+"minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:interact": {
+          "interactions": [
+
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:cofre_con_cuerdas"},
+                    { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:transformation"}
+                  ]
+                },
+                "event": "minecraft:con_cofre",
+                "target": "self"
+              },
+              "use_item": true,
+              "hurt_item": 1,
+              "play_sounds": "shear",
+              "interact_text": "action.interact.mooshear"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "bucket:0"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "bucket:1",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.milk"
+            }
+          ]
+      },
+        "minecraft:strength": {
+          "value": 6,
+          "max": 6
+        }
+      },
+      "minecraft:con_montura": {
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        }
+      },
+      "minecraft:con_cofre": {
+"minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:interact": {
+          "interactions": [
+
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "bucket:0"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "bucket:1",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.milk"
+            }
+          ]
+      },
+        "minecraft:strength": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "minecraft:con_montura2": {
+"minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:input_ground_controlled": {
+        },
+      "minecraft:rideable": {
+        "seat_count": 3,
+        "interact_text": "action.interact.ride.horse",
+        "seats": [
+          {
+            "position": [ 0.0, 1.58, 0.3 ],
+            "min_rider_count": 0,
+            "max_rider_count": 1
+          },
+          {
+            "position": [ 0.88, 1.58, -0.3 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2
+          },
+          {
+            "position": [ -0.88, 1.58, -0.3 ],
+            "min_rider_count": 2,
+            "max_rider_count": 3
+          }
+        ]
+      }
+      }
+
+
+
+
+    },
+
+    "components": {
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo", 
+          "log",
+          "log2",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log",
+          "stripped_spruce_log",
+          "stripped_oak_log",
+          "stripped_jungle_log",
+          "stripped_dark_oak_log",
+          "stripped_birch_log",
+          "bamboo_sapling",
+          "deadbush",
+          "double_plant",
+          "leaves",
+          "leaves2",
+          "red_flower",
+          "red_mushroom",
+          "reeds",
+          "sapling",
+          "sweet_berry_bush",
+          "tallgrass",
+          "yellow_flower",
+          "minecraft:cactus",
+          "minecraft:dried_kelp_block",
+          "minecraft:glass",
+          "minecraft:glass_pane",
+          "minecraft:lever",
+          "minecraft:planks",
+          "minecraft:stripped_acacia_log",
+         "minecraft:stripped_birch_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_oak_log",
+          "minecraft:stripped_spruce_log"
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [ "mamut", "mob" , "cow"]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.3,
+        "height": 1.4
+      },
+      "minecraft:movement": {
+        "value": 0.30
+      },
+      "minecraft:water_movement": {
+        "drag_factor": 0.40
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:follow_range": {
+        "value": 48
+      },
+
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.panic": {
+        "priority": 2,
+        "speed_multiplier": 2.0
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 9,
+            "add": {
+              "component_groups": [
+                "minecraft:adult",
+                "minecraft:adult_wild"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "minecraft:baby",
+                "minecraft:baby_wild"
+              ]
+            }
+          }
+        ]
+      },
+
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "minecraft:baby",
+            "minecraft:baby_domado"
+          ]
+        }
+      },
+
+      "minecraft:ageable_grow_up_salvaje": {
+        "remove": {
+          "component_groups": [
+            "minecraft:baby",
+            "minecraft:baby_wild",
+            "minecraft:baby_scared"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:adult",
+      "minecraft:adult_wild"
+          ]
+        }
+      },
+      "minecraft:ageable_grow_up_domado": {
+        "remove": {
+          "component_groups": [
+            "minecraft:baby",
+            "minecraft:baby_domado"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:adult",
+ "minecraft:adult_domado",
+      "minecraft:sin_montura",
+      "minecraft:sin_cofre"
+          ]
+        }
+      },      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:adult_hostile"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:adult_wild"
+          ]
+        }
+      },
+
+      "minecraft:on_tame_mamut_baby": {
+        "remove": {
+          "component_groups": [
+            "minecraft:baby_wild",
+            "minecraft:baby_scared"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:baby_domado"
+          ]
+        }
+      },
+      "minecraft:on_tame_mamut_adult": {
+        "remove": {
+          "component_groups": [
+            "minecraft:adult_hostile",
+            "minecraft:adult_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:adult_domado",
+      "minecraft:sin_montura",
+      "minecraft:sin_cofre"
+          ]
+        }
+      },
+      "minecraft:on_saddled": {
+        "remove": {
+          "component_groups": [
+"minecraft:sin_montura"
+          ]
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:con_montura"
+          ]
+        }
+      },
+      "minecraft:on_saddled2": {
+        "remove": {
+          "component_groups": [
+            "minecraft:sin_montura2"
+          ]
+        },
+        "add": {
+          "component_groups": [
+"minecraft:con_montura2"
+          ]
+        }
+      },
+      "minecraft:off_saddled": {
+        "remove": {
+          "component_groups": [
+ "minecraft:con_montura"
+          ]
+        },
+        "add": {
+          "component_groups": [
+"minecraft:sin_montura"
+          ]
+        }
+      },
+      "minecraft:off_saddled2": {
+        "add": {
+          "component_groups": [
+            "minecraft:sin_montura2"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+"minecraft:con_montura2"
+          ]
+        }
+      },
+      "minecraft:con_cofre": {
+        "add": {
+          "component_groups": [
+
+            "minecraft:con_cofre"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+"minecraft:sin_cofre"
+          ]
+        }
+      },
+
+      "minecraft:on_anger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:adult_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:adult_hostile"
+          ]
+        }
+      },
+
+      "minecraft:baby_on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:baby_scared"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:baby_wild"
+          ]
+        }
+      },
+
+      "minecraft:on_scared": {
+        "remove": {
+          "component_groups": [
+            "minecraft:baby_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:baby_scared"
+          ]
+        }
+      }
+    }
+  }
+}

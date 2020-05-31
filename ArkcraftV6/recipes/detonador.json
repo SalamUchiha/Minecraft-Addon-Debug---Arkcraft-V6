@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:detonador"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " B ",
+      "TRP",
+      " P "
+    ],
+   "key": {
+      "B": {
+        "item": "minecraft:iron_bars"
+      },
+      "T": {
+        "item": "minecraft:iron_trapdoor"
+      },
+      "P": {
+        "item": "arkcraft:placa_de_metal"
+      },
+      "R": {
+        "item": "minecraft:redstone_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:detonador"
+    }
+  }
+}

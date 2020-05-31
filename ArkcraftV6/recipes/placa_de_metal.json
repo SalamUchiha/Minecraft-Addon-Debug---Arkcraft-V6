@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:placa_de_metal"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "111",
+      "WWW",
+      "111"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:iron_block"
+      },
+      "W": {
+        "item": "minecraft:coal_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:placa_de_metal"
+    }
+  }
+}

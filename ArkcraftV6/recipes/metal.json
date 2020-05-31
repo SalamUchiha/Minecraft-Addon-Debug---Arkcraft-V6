@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:metal"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "1x1",
+      "x x",
+      "1x1"
+    ],
+    "key": {
+      "x": {
+        "item": "arkcraft:placa_de_metal"
+      },
+      "1": {
+        "item": "arkcraft:cementing_paste"
+      }
+    },
+    "result": {
+      "item": "arkcraft:metal",     "count": 2
+    }
+  }
+}
